@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".View.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            app:title="Profile"
+            app:titleTextColor="@color/white"
+            app:titleCentered="true">
+
+            <Button
+                android:id="@+id/profile_frgment_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/blue"
+                android:layout_gravity="right"
+                android:text="save"
+                android:textStyle="italic"
+                android:textSize="16dp"/>
+        </com.google.android.material.appbar.MaterialToolbar>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:background="@color/blue">
+
+            <ImageView
+                android:id="@+id/profole_image"
+                android:layout_width="124dp"
+                android:layout_height="124dp"
+                android:src="@drawable/ic_launcher_foreground"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/profile_imagebtn"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/bg_add_room_oval"
+                android:src="@drawable/ic_baseline_add_24"
+                app:layout_constraintBottom_toBottomOf="@+id/profole_image"
+                app:layout_constraintEnd_toEndOf="@+id/profole_image"
+                app:layout_constraintHorizontal_bias="0.571"
+                app:layout_constraintStart_toEndOf="@+id/profole_image"
+                app:layout_constraintTop_toBottomOf="@+id/profole_image" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UserName"
+                android:textSize="16dp"/>
+
+            <EditText
+                android:id="@+id/profile_username_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Add Your Name"
+                android:textColor="@color/black"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="16dp"/>
+
+            <EditText
+                android:id="@+id/profile_email_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Add Your Email"
+                android:textColor="@color/black"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textSize="16dp"/>
+
+            <EditText
+                android:id="@+id/profile_phone_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Add Your Phone"
+                android:textColor="@color/black"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textSize="16dp"/>
+
+            <EditText
+                android:id="@+id/profile_gender_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Add Your Gender"
+                android:textColor="@color/black"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date Of Birth"
+                android:textSize="16dp"/>
+
+            <EditText
+                android:id="@+id/profile_date_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Add Your Date Of Birth"
+                android:textColor="@color/black"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/profile_sign_out_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#ED6464"
+                android:text="sign out"
+                android:layout_marginBottom="25dp"/>
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

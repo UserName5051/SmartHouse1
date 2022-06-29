@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_listitem_main"
+    android:elevation="10dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="10dp"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/li_roomImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_launcher_foreground"/>
+
+    <TextView
+        android:id="@+id/li_roomName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Room Name"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic"/>
+
+
+    <TextView
+        android:id="@+id/li_numDevices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="devices x1"
+        android:textSize="16dp"
+        android:textColor="#D8D8D8"/>
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterYourHouseActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/ic_launcher_foreground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#4DFFE500"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_baseline_home_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Smart House"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="36dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_linearlayout"
+            android:layout_margin="15dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/enter_email_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="E-mail"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/white"
+                android:inputType="textWebEmailAddress"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"/>
+
+
+            <EditText
+                android:id="@+id/enter_password_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/white"
+                android:inputType="textPassword"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/eneter_btn"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:text="New Resident"
+            android:backgroundTint="@color/blue"/>
+
+        <Button
+            android:id="@+id/enter_register_btn"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:backgroundTint="@color/black"/>
+
+    </LinearLayout>
+</LinearLayout>
